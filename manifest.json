@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Visualize The Text",
-    "description": "Detects double clicks on text and prints HELLO in the console.",
+    "description": "Detects double clicks on text to get the image.",
     "version": "1.0",
     "permissions": ["activeTab"],
     "action": {
