@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Visualize The Text",
+    "description": "Detects double clicks on text and prints HELLO in the console.",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "poppup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon16.png",
+        "128": "images/icon16.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon16.png",
+      "128": "images/icon16.png"
+    },
+    "host_permissions": [
+      "https://*/*"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
